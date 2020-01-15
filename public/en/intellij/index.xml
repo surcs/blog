@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IntelliJ on SURC</title>
+    <link>https://surcs.github.io/en/intellij/</link>
+    <description>Recent content in IntelliJ on SURC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Oct 2019 23:34:18 +0800</lastBuildDate>
+    
+	<atom:link href="https://surcs.github.io/en/intellij/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vocabulary</title>
+      <link>https://surcs.github.io/en/intellij/vocabulary/</link>
+      <pubDate>Mon, 14 Oct 2019 23:38:30 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/en/intellij/vocabulary/</guid>
+      <description>1 duplicaten. 副本；复制品 adj. 复制的；二重的 vt. 复制；使加倍 vi. 复制；重复
+ repetitiveadj. 重复的 recentadj. 最近的；近代的 repositoryn. 贮藏室，仓库 synchronizevt. 使……合拍；使……同步 vi. 同步；同时发生
+ separatorn. 分离器；[计] 分隔符 togglen.</description>
+    </item>
+    
+    <item>
+      <title>Sentence</title>
+      <link>https://surcs.github.io/en/intellij/sentence/</link>
+      <pubDate>Mon, 14 Oct 2019 23:38:48 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/en/intellij/sentence/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

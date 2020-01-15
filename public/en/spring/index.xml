@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spring on SURC</title>
+    <link>https://surcs.github.io/en/spring/</link>
+    <description>Recent content in Spring on SURC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Oct 2019 23:12:18 +0800</lastBuildDate>
+    
+	<atom:link href="https://surcs.github.io/en/spring/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Vocabulary</title>
+      <link>https://surcs.github.io/en/spring/vocabulary/</link>
+      <pubDate>Sun, 13 Oct 2019 23:06:51 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/en/spring/vocabulary/</guid>
+      <description>1 typosn. 错别字 assistancen. 援助，帮助；辅助设备 templaten. 模板，样板 identicaladj. 同一的；完全相同的 n. 完全相同的事物
+ exactlyadv. 恰好地；正是；精确地；正确地 succinctadj. 简洁的 relevantadj. 相关的；切题的；中肯的；有重大关系的；有意义的，目的明确的 overridevt.</description>
+    </item>
+    
+    <item>
+      <title>Sentence</title>
+      <link>https://surcs.github.io/en/spring/sentence/</link>
+      <pubDate>Sun, 13 Oct 2019 23:07:25 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/en/spring/sentence/</guid>
+      <description>1 For example, if you need to add a dependency to a class, that dependency can be satisfied automatically without you needing to modify the configuration.例如，如果需要向类添加依赖项，则可以自动满足该依赖项，而不需要修改配置。 
+Thus autowiring can be especially useful during development, without negating the option of switching to explicit wiring when the code base becomes more stable.因此，自动装配在开发过程中特别有用，当代码库变得更加稳定时，自动装配可以避免切换到显式连接的选项。 
+Implement the more fine-grained control available with annotation-based configuration通过基于注释的配置实现更细粒度的控制</description>
+    </item>
+    
+  </channel>
+</rss>

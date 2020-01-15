@@ -1,0 +1,41 @@
+language: go
+go:
+  - "1.8"
+install:
+  # 安装最新的hugo
+  - wget https://github.com/gohugoio/hugo/releases/download/v0.62.2/hugo_0.62.2_Linux-64bit.deb
+  - sudo dpkg -i hugo_0.62.2_Linux-64bit.deb
+  - hugo version
+  - ls
+  # - git clone https://github.com/matcornic/hugo-theme-learn.git
+script:
+  - hugo --theme=surc --baseUrl="https://surcs.github.io/" --buildDrafts
+after_script:
+  # 部署
+  - cd ./public
+  - git init
+  - git config user.name "surcs"
+  - git config user.email "suhui59906@gmail.com"
+  - git add .
+  - git commit -m "Update By TravisCI"
+  # Github Pages
+  - git push --force --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master
+  # Github Pages
+  - git push --quiet "https://$GITHUB_TOKEN@${GH_REF}" master:master --tags
+env:
+ global:
+   # Github Pages
+   - GH_REF: https://github.com/surcs/surcs.github.io
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: $GITHUB_TOKEN
+    on:
+        branch: master
+    local_dir: public
+    repo: surcs/surcs.github.io
+    # fqdn: <custom-domain-if-needed>
+    target_branch: master
+    keep-history: true # 是否保持target-branch分支的提交记
+    email: suhui59906@gmail.com
+    name: surcs

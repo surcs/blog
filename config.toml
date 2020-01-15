@@ -1,0 +1,25 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "SURC"
+# Change the default theme to be use when building the site with Hugo
+theme = "surc"
+
+# For search functionality
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+[params]
+  # Change default color scheme with a variant one. Can be "red", "blue", "green".
+  themeVariant = "mine"
+
+[[menu.shortcuts]] 
+name = "<i class='fab fa-github'></i> My Github"
+identifier = "ds"
+url = "https://github.com/surcs"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tags'></i> Tags"
+url = "/tags"
+weight = 30
+

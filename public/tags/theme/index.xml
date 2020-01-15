@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>theme on SURC</title>
+    <link>https://surcs.github.io/tags/theme/</link>
+    <description>Recent content in theme on SURC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 02 Oct 2019 23:34:59 +0800</lastBuildDate>
+    
+	<atom:link href="https://surcs.github.io/tags/theme/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First Content</title>
+      <link>https://surcs.github.io/spring/first-content/</link>
+      <pubDate>Wed, 02 Oct 2019 23:34:59 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/spring/first-content/</guid>
+      <description> First Content Test test
+An warning disclaimer
+</description>
+    </item>
+    
+  </channel>
+</rss>

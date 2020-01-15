@@ -1,0 +1,267 @@
+[
+{
+	"uri": "https://surcs.github.io/uml/module/",
+	"title": "Module",
+	"tags": [],
+	"description": "",
+	"content": " 构建模块 UML的构建模块有：事物、关系、图 事物：事物是是实体抽象化的最终结果，是 UML模块最重要的组成部分(包含结构事物、行为事物、分组事物、注释事物) \n1、事物 \n结构事物 结构事物是模型中的静态部分，用以呈现概念或实体的表现元素\n类 接口 协作 用例 组件 节点  行为事物 行为事物指的是 UML 模型中的动态部分，代表语句里的 \u0026ldquo;动词\u0026rdquo;，表示模型里随着时空不断变化的部分\n包含两类：\n交互: 交互被定义为一种行为，包括一组元素之间的消息交换来完成特定的任务。\n状态机: 状态机由一系列对象的状态组成，它是有用的，一个对象在其生命周期的状态是很重要的。\n 分组事物 可以把分组事物看成是一个\u0026rdquo;盒子\u0026rdquo;，模型可以在其中被分解。目前只有一种分组事物，即包（package）。结构事物、动作事物甚至分组事物都有可能放在一个包中。包纯粹是概念上的，只存在于开发阶段，而组件在运行时存在。\n包: 封装是唯一一个分组事物可收集结构和行为的东西。\n 注释事物: 注释事物可以被定义为一种机制来捕捉UML模型元素的言论，说明和注释。注释是唯一一个注释事物。\n注释: 注释用于渲染意见，约束等的UML元素。\n 2、关系 关系是另一个最重要的构建块UML，它显示元素是如何彼此相关联，此关联描述的一个应用程序的功能，UML中定义了四种关系：\n依赖关系 依赖是两件事物之间的语义联系，其中一个事物的变化也影响到另一个事物\n协作 一种描述一组对象之间连接的结构关系，如聚合关系（描述了整体和部分间的结构关系）\n泛化 泛化可以被定义为一个专门的元件连接关系与一个广义的元素，它基本上描述了在对象世界中的继承关系，是一种一般化-特殊化的关系\n实现 类之间的语义关系，其中的一个类指定了由另一个类保证执行的契约\n UML图  https://www.w3cschool.cn/uml_tutorial/\n"
+},
+{
+	"uri": "https://surcs.github.io/uml/use-case/",
+	"title": "Use Case",
+	"tags": [],
+	"description": "",
+	"content": " 用例图  1、参与者 指系统以外的、需要使用系统或与系统交互的外部实体（亲自操作） \r\r例\r\r\r读者通过系统管理员在某大学图书管理系统中办理借书证。读者分学生和教师。读者借还书籍要通过图书管理员来完成。系统管理员负责图书管理系统的借书证维护和图书数据维护等操作\n  有哪些参与者？   图书管理员、系统管理员\n  \r  2、用例 用例定义了参与者和系统之间的交互实现的一个业务目标  3、泛化关系 有共同点和不同点（简化共同点，保留不同点）\n作用： 有效地减少了参与者与用例之间的关联关系的个数，简化了用例模型\n\n(1)、一般参与者与特殊参与者之间的关系 (2)、特殊用例继承、覆盖、增加一般用例的行为 \n4、关联/交互关系(参与者与用例之间的关系) 参与者完成系统的一项功能  5、包含关系(基本用例的行为必然执行包含用例的行为) \n6、扩展关系(基本用例的行为条件执行扩展用例的行为) \r\r\r例\r\r\r有一个学生“选课系统”。通过这个系统，学生在登录系统后可以查询课程、注册课程。每学期的“课程目录”信息从旧的课程目录系统读取而不能更改。 每学期开始时，系统管理员会开放注册。学生在选择课程前，需要先通过查询获取本学期的“课程目录”。学生在完成选课时可以生成课程表，也可以在完成选课后随时生成课程表。系统管理员在开学2周后关闭注册。 系统管理员在登录后可以维护学生信息，开放注册和关闭注册。\n  请找出其中的参与者、用例及其关系     \r \n7、系统边界(指系统与系统之间的界限) 系统边界用实线方框图形符号表示\n用例绘制在方框里面（即边界里面）\n参与者绘制在方框外面（即边界外面）\n\r\r\r例1\r\r\r在一个仅为交易客户提供买卖基金的基金交易系统中，它的参与者就是进行基金买卖的交易客户。 \r \r\r例2\r\r\r但是，基金的品种应该存在于该系统中，否则交易客户无法进行基金的买卖 另一方面，基金品种的输入不应该由交易客户来完成 因此，基金品种的输入应该由另外一个系统（不妨假设它叫基金管理系统）完成 \r \r\r例3\r\r\r现在开发了一个新的基金交易系统 该系统必须提供基金的买卖和基金品种的管理，由基金公司员工来管理基金品种 \r\n"
+},
+{
+	"uri": "https://surcs.github.io/spring/collection/error/",
+	"title": "Error",
+	"tags": [],
+	"description": "",
+	"content": " 1、[08001] Could not create connection to database server. Attempted reconnect 3 times. Giving up. (intellij mysql) 1)url后添加\n?serverTimezone=UTC  2)本地的mysql没有运行或创建该数据库\n3)IP地址不对\n4)3306端口被占用: https://blog.csdn.net/New_feature/article/details/83683924\n5)mysql版本问题\n6)项目的路径里包含中文字符 \n2、Intellij idea 报错：Error : java 不支持发行版本12 先确保java环境变量版本正确(cmd 输入 echo %JAVA_HOME%)\n1)https://blog.csdn.net/qq_22076345/article/details/82392236 (后面编译时 可能又变回去 需要重复修改)\n2)pom.xml添加 (可持续)\n \u0026lt;build\u0026gt; \u0026lt;plugins\u0026gt; \u0026lt;plugin\u0026gt; \u0026lt;groupId\u0026gt;org.apache.maven.plugins\u0026lt;/groupId\u0026gt; \u0026lt;artifactId\u0026gt;maven-compiler-plugin\u0026lt;/artifactId\u0026gt; \u0026lt;version\u0026gt;2.0.2\u0026lt;/version\u0026gt; \u0026lt;configuration\u0026gt; \u0026lt;source\u0026gt;12\u0026lt;/source\u0026gt; \u0026lt;target\u0026gt;12\u0026lt;/target\u0026gt; \u0026lt;/configuration\u0026gt; \u0026lt;/plugin\u0026gt; \u0026lt;/plugins\u0026gt; \u0026lt;/build\u0026gt;  3)修改里面的setting.xml文件(在 profiles 标签里添加) (可持续)  \u0026lt;profile\u0026gt; \u0026lt;id\u0026gt;jdk-12\u0026lt;/id\u0026gt; \u0026lt;activation\u0026gt; \u0026lt;activeByDefault\u0026gt;true\u0026lt;/activeByDefault\u0026gt; \u0026lt;jdk\u0026gt;12\u0026lt;/jdk\u0026gt; \u0026lt;/activation\u0026gt; \u0026lt;properties\u0026gt; \u0026lt;maven.compiler.source\u0026gt;12\u0026lt;/maven.compiler.source\u0026gt; \u0026lt;maven.compiler.target\u0026gt;12\u0026lt;/maven.compiler.target\u0026gt; \u0026lt;maven.compiler.compilerVersion\u0026gt;12\u0026lt;/maven.compiler.compilerVersion\u0026gt; \u0026lt;/properties\u0026gt; \u0026lt;/profile\u0026gt;   3、cannot be opened because it does not exist (xml) 文件放入 resources \n4、java.lang.NoClassDefFoundError jar包的问题\n1)jar包之间有冲突\n2)maven并没有下载成功，如果reimport失败就需要手动下载jar包 \n5、org.apache.ibatis.binding.BindingException: Invalid bound statement (not found) 查找问题 https://my.oschina.net/MIKEWOO/blog/1785705\n或添加(但可能出现error6) \n6、Error creating bean with name \u0026lsquo;sqlSessionFactory\u0026rsquo; defined in class path resource 尝试删去 \n7、java.sql.SQLException: Field \u0026lsquo;id\u0026rsquo; doesn\u0026rsquo;t have a default value 在mysql数据库中，自增长id没有设为Auto Increment \n8、org.apache.ibatis.binding.BindingException: Parameter \u0026lsquo;studentId\u0026rsquo; not found. Available parameters are [arg2, arg1, arg0, param3, param1, param2] 多参数需要用 @Param(\u0026ldquo;studentId\u0026rdquo;) \n9、SLF4J: No SLF4J providers were found. 在官网和大部分说法是缺少 中间层 slf4j-log4j12.jar (但我已经加入 所以问题不在这里) 魔法了一会 发现注解掉\n\u0026lt;scope\u0026gt;test\u0026lt;/scope\u0026gt;  后可以正常运行 (原来 test 不作用在运行时。) scope标签:https://www.jianshu.com/p/a4fc54b5a6bf\nmaven官网解释:https://howtodoinjava.com/maven/maven-dependency-scopes/ \n(  X ) 10、ERROR StatusLogger No Log4j 2 configuration file found. https://www.cnblogs.com/Hugooscar/p/6105327.html\n"
+},
+{
+	"uri": "https://surcs.github.io/markdown/heading/",
+	"title": "Heading",
+	"tags": [],
+	"description": "",
+	"content": " markdown # h1 Heading ## h2 Heading ### h3 Heading #### h4 Heading ##### h5 Heading ###### h6 Heading  Or html \u0026lt;h1\u0026gt;h1 Heading\u0026lt;/h1\u0026gt; \u0026lt;h2\u0026gt;h2 Heading\u0026lt;/h2\u0026gt; \u0026lt;h3\u0026gt;h3 Heading\u0026lt;/h3\u0026gt; \u0026lt;h4\u0026gt;h4 Heading\u0026lt;/h4\u0026gt; \u0026lt;h5\u0026gt;h5 Heading\u0026lt;/h5\u0026gt; \u0026lt;h6\u0026gt;h6 Heading\u0026lt;/h6\u0026gt;  Renders to: h1 Heading h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading "
+},
+{
+	"uri": "https://surcs.github.io/",
+	"title": "SURC",
+	"tags": [],
+	"description": "",
+	"content": " SURC Just write for fun\n"
+},
+{
+	"uri": "https://surcs.github.io/uml/class/",
+	"title": "Class",
+	"tags": [],
+	"description": "",
+	"content": " 类的属性的语法格式 +（公有属性Public）：能够被系统中其他任何操作查看和使用\n-（私有属性Private）：仅在类内部可见，只有类内部的操作才能存取该属性\n#（受保护属性Protected）：供类中的操作存取，也可被其子类使用 \n类之间的关系 关联关系 一个类的实例与另一个类的实例在结构上的静态联系 依赖关系 一个类的结构上的变化会影响到另一个类（代码级） 泛化关系 一般类与特殊类之间的继承（代码级） 关联关系的相关概念 \r\r\r(1)关联名：可以给关联加上关联名，来描述关联的作用，以便和其他关联关系相区别\r\r\rCompany类和Person类之间的关联如果不使用关联名，则可以有多种解释，如Person类可以表示是公司的客户、雇员或所有者等 \r \r\r(2)关联角色：关联关系两端的类的对象在对方的类里的标识称为角色\r\r\rCompany类以employer的角色、Person类以employee的角色参与关联 \r \r\r(3)多重性：表示可以有多少个对象参与该关联\r\r\r公司可以雇佣多个雇员，表示为0..n；雇员只能被一家公司雇佣，表示为1。 \r \r\r(4)关联类：如果在具有关联关系的类中，存在一个属性放在哪个类中都不合适的情况，就可以考虑使用关联类(多对多中间表)\r\r\r\r \r\r(5)关联约束：对于关联可以加上一些约束，以加强关联的含义\r\r\rAccount类或者与Person类有关联，或者与Corporation类有关联，但不能同时与Person类和Corporation类都有关联 \r \r\r(6)限定关联：在关联端紧靠源类图标处可以有限定符。限定符的作用就是在给定关联一端的一个对象和限定符值以后，可确定另一端的一个对象或对象集。相当于一种关键字，用关键字把所有的对象分开，有利于提高查询效率。限定符是关联的属性，而不是类的属性。利用限定关联可以把模型中的多重性变为单一性\r\r\r一个person可以在bank中有多个account。 但给定了一个account值后，就可以对应一个person值 \r \r\r(7)自反关联：一个类与自身的关联。自返关联虽然只有一个被关联的类，但有两个关联端，每个关联端的角色不同。\r\r\r“人”类的自返关联“结婚”。一个人与另一个人结婚，必然一个扮演丈夫角色，另一个扮演妻子角色。 \r \r\r(8)N元关联：3个或3个以上类之间的关联。在同一时刻，每个类必须确定一个对象。\r\r\r一个运动员（player）在某一个年份（year）中在某一个运动队（team）中服役 \r \r\r(9)聚合（聚集）关系：聚合是一种特殊形式的关联。聚合表示类之间整体与部分的关系。整体与部分没有相同的生存期。整体不存在了，部分仍能存在。\r\r\r舰队不存在时，船只依然存在 \r \r\r(10)组成（组合）关系：组成是一种特殊形式的关联。组成表示类之间整体与部分的关系。整体与部分有相同的生存期。整体不存在了，部分也不能存在。\r\r\r圆不存在时，构成圆的点也不存在了 \r \n接口 实现关系  类的版型 UML中有3种主要的类版型：边界类（boundary class）、控制类（control class）和实体类（entity class）\n实体类 用于保存需要放进持久存储体的信息。 控制类 是负责其他类工作的类。根据业务规则，执行相应脚本流，以委托责任的形式向其他类发出消息，由其他类来实现具体的功能。(协调边界类和实体类之间的交互)\n边界类 位于系统与外界的交界处，它是系统内的对象和系统外的参与者的联系媒介。外界的消息只有通过边界类的对象实例才能发送给系统。 边界类、控制类、实体类协作  对象图（object diagram） 类图与对象图的对比 "
+},
+{
+	"uri": "https://surcs.github.io/markdown/comment/",
+	"title": "Comment",
+	"tags": [],
+	"description": "",
+	"content": " \u0026lt;!-- This is a comment --\u0026gt;  Comment below should NOT be seen\nRenders to: "
+},
+{
+	"uri": "https://surcs.github.io/markdown/",
+	"title": "Markdown",
+	"tags": [],
+	"description": "",
+	"content": " Markdown Markdown and Markdown Extra syntax\n"
+},
+{
+	"uri": "https://surcs.github.io/uml/sequence/",
+	"title": "Sequence",
+	"tags": [],
+	"description": "",
+	"content": " 顺序图  概念 对象：同类图中的对象，是类的实例\n生命线：从对象图标向下延伸的一条虚线，表示对象存在的生命期\n控制焦点（激活期）：对象执行一个动作的时间段\n消息：对象间的一次通信\n 顶端的对象（ob3:C3，ob4:C4）：表明在本次交互活动的开始时刻，已经存在了 箭头指向的对象（ob1:C1，ob2:C2）：表明在本次交互活动的过程中创建的 虚线的末端标记X：表明在本次交互活动的结束时刻，顶端代表的对象会被销毁 虚线的末端一直延伸下去：表明在本次交互活动的结束时刻，顶端代表的对象会继续存在 分支：从同一点发出多条消息，并指向不同的对象(又分条件分支、并行分支) 从属流：从同一点发出多条消息，并指向同一个对象的不同生命线 \n消息种类 (1) 调用消息：调用（procedure call）消息的发送者把控制传递给消息的接收者，然后停止活动，等待消息接收者放弃或返回控制。调用消息可以用来表示同步的意义 (2) 异步消息：异步（asynchronous）消息的发送者通过消息把信号传递给消息的接收者，然后继续自己的活动，不等待接收者返回消息或控制。异步消息的接收者和发送者是并发工作的。 \r\r调用消息与异步消息的对比\r\r\r调用消息主要用于控制流在完成之前需要中断的情况；\n异步消息主要用于控制流在完成之前不需要中断的情况。\n  例   账号和密码的对错判断完成之前，对象“:Web页面”的第一个控制焦点表达的活动必须被中断。因此，“用户验证()”消息是调用消息。\n在进行分数登记的时候，同时会写入日志文件，即分数登记操作不需要中断。也就是说，对象“:分数登记”的控制焦点表达的活动不会被中断。因此，“写入日志文件()”消息是异步消息。   \r\n(3) 返回消息：返回（return）消息表示前面发出的消息要返回的消息值。如果是从过程调用返回，则返回消息是隐含的，可以不用画出来。对于非过程调用，如果有返回消息，必须明确表示出来。 (4) 反身消息：在反身消息中，消息的发送者和接收者是同一个对象。 (5) 阻止消息：阻止消息是指消息发送者发出消息给接收者，如果接收者无法立即接收消息，则发送者放弃这个消息。 (6) 超时消息：超时消息是指消息发送者发出消息给接收者并按指定时间等待。如果接收者无法在指定时间内接收消息，则发送者放弃这个消息。  \r\r实例：ATM取款\r\r\r用例描述\n1、要求用户输入取款金额\n2、判断该储户的账户余额是否足额\n3、若足额，则输出等额的人民币现金。修改账户余额\n4、若不足额，则本次取款操作失败\n  系统分析阶段的顺序图1       系统分析阶段的顺序图2       系统分析阶段的顺序图1     \r "
+},
+{
+	"uri": "https://surcs.github.io/hugo/",
+	"title": "Hugo",
+	"tags": [],
+	"description": "",
+	"content": " Markdown Some hugo commands\n"
+},
+{
+	"uri": "https://surcs.github.io/markdown/horizontal/",
+	"title": "Horizontal Rule",
+	"tags": [],
+	"description": "",
+	"content": " markdown ___: three consecutive underscores ---: three consecutive dashes ***: three consecutive asterisks  or html \u0026lt;hr\u0026gt;  \nrenders to:  "
+},
+{
+	"uri": "https://surcs.github.io/uml/collaboration/",
+	"title": "Collaboration",
+	"tags": [],
+	"description": "",
+	"content": " 协作图 协作图用于描述相互合作的对象间的交互关系和链接关系。\n对象间的合作情况是用消息来表示的。\n这里的消息与顺序图中的消息在本质上是相同的。\n但是没有了消息发送的时间顺序概念。\n为了能够表达消息的顺序，需要使用消息序号。\n可以用来描述一个用例的执行。\n "
+},
+{
+	"uri": "https://surcs.github.io/hugo/push/",
+	"title": "Push",
+	"tags": [],
+	"description": "",
+	"content": "hugo --theme=surc --baseUrl=\u0026quot;https://surcs.github.io/\u0026quot; --buildDrafts cd public git add .  git commit -m \u0026quot;add hugo syntax\u0026quot;  git push  cd ..  "
+},
+{
+	"uri": "https://surcs.github.io/markdown/body/",
+	"title": "Body Copy",
+	"tags": [],
+	"description": "",
+	"content": " markdown I'm the body copy (๑´ㅂ`๑)  or html \u0026lt;p\u0026gt; I'm the body copy (๑´ㅂ`๑) ~ \u0026lt;/p\u0026gt;  renders to: I\u0026rsquo;m the body copy (๑´ㅂ`๑)\n I'm the body copy (๑´ㅂ`๑)~ "
+},
+{
+	"uri": "https://surcs.github.io/spring/",
+	"title": "Spring",
+	"tags": [],
+	"description": "",
+	"content": " Spring Learning Spring Framework\nVersion 5.2.0.RELEASE\n"
+},
+{
+	"uri": "https://surcs.github.io/hugo/run/",
+	"title": "Run",
+	"tags": [],
+	"description": "",
+	"content": "run locally\nhugo server --theme=surc --buildDrafts  It will be run here local server\n"
+},
+{
+	"uri": "https://surcs.github.io/markdown/emphasis/",
+	"title": "Emphasis",
+	"tags": [],
+	"description": "",
+	"content": " Bold Markdown:\n**bold text(´･ω･`)**  HTML:\n\u0026lt;strong\u0026gt;bold text2 (´･ω･`)\u0026lt;/strong\u0026gt;  renders to:\nbold text1 (´･ω･`)\nbold text2 (´･ω･`)\nItalics Markdown\n_italicized text1_  html\n\u0026lt;em\u0026gt;italicized text2\u0026lt;/em\u0026gt;  renders to: italicized text1\nitalicized text2\nstrikethrough Markdown\n~~the strikethrogh1~~  html\n\u0026lt;del\u0026gt;the strikethrogh2\u0026lt;/del\u0026gt;  renders to:\nthe strikethrogh1\nthe strikethrogh2\n"
+},
+{
+	"uri": "https://surcs.github.io/git/",
+	"title": "Git",
+	"tags": [],
+	"description": "",
+	"content": " git "
+},
+{
+	"uri": "https://surcs.github.io/markdown/blockquote/",
+	"title": "Blockquote",
+	"tags": [],
+	"description": "",
+	"content": " markdown \u0026gt; Here is **Blockquote 1**  html \u0026lt;blockquote\u0026gt; Here is \u0026lt;em\u0026gt; Blockquote 2 \u0026lt;/em\u0026gt; \u0026lt;/blockquote\u0026gt;  renders to:  Here is Blockquote 1\n  Here is  Blockquote 2   Nested \u0026gt; 1(two tabs)\t\u0026gt; 2 \u0026gt; \u0026gt;\u0026gt; 3 \u0026gt; \u0026gt; 4(no tab) \u0026gt; 5   1\n2\n 3\n 4 5\n "
+},
+{
+	"uri": "https://surcs.github.io/uml/state/",
+	"title": "State",
+	"tags": [],
+	"description": "",
+	"content": " 状态图 描述一个对象的生命周期内的状态及状态变迁，以及引起状态变迁的事件和对象在状态中的动作等。\n 状态图模块 "
+},
+{
+	"uri": "https://surcs.github.io/uml/",
+	"title": "Uml",
+	"tags": [],
+	"description": "",
+	"content": " UML 1、所有系统均可表示为两个方面：静态结构(使用类图)和动态行为(使用顺序图、协作图、状态图、活动图)\n2、行为模型包括：状态模型(使用状态图)、活动模型(使用活动图)、交互模型(使用顺序图、协作图)\n3、状态模型涉及一个对象，活动模型和交互模型涉及多个对象\n"
+},
+{
+	"uri": "https://surcs.github.io/markdown/list/",
+	"title": "List",
+	"tags": [],
+	"description": "",
+	"content": " Unordered markdown\n+ 1 - 2 ('+' or '-' doesn't matter) + 3 + 4  html\n\u0026lt;ul\u0026gt; \u0026lt;li\u0026gt;1\u0026lt;/li\u0026gt; \u0026lt;ul\u0026gt; \u0026lt;li\u0026gt;2\u0026lt;/li\u0026gt; \u0026lt;li\u0026gt;3\u0026lt;/li\u0026gt; \u0026lt;/ul\u0026gt; \u0026lt;li\u0026gt;4\u0026lt;/li\u0026gt; \u0026lt;/ul\u0026gt;  renders to:\n 1  2 (\u0026lsquo;+\u0026rsquo; or \u0026lsquo;-\u0026rsquo; doesn\u0026rsquo;t matter) 3  4   1  2 3  4  Ordered markdown\n1. a 2. b 3. c 4. d  html\n\u0026lt;ol\u0026gt; \u0026lt;li\u0026gt;!\u0026lt;/li\u0026gt; \u0026lt;li\u0026gt;?\u0026lt;/li\u0026gt; \u0026lt;/ol\u0026gt;  renders to:  a b c d   ! ?  Actually, for every number, Markdown will automatically number each item.\n2. a 2. b 4. c   a b c  "
+},
+{
+	"uri": "https://surcs.github.io/uml/activity/",
+	"title": "Activity",
+	"tags": [],
+	"description": "",
+	"content": " 活动图 描述对象的一个活动到另一个活动的控制流，活动的序列，工作的流程和并发的处理行为等。一个控制流关联的两个活动可以是一个对象的，也可以是多个对象的。用泳道进行说明。\n 活动图模块  概念 \n1、分支 对于同一个触发事件，可以根据不同的警戒条件转向不同的活动，每个可能的转移是一个分支。 2、分叉、汇合 分叉表示的是一个控制流被两个或多个控制流代替，经过分叉后，这些控制流是并发进行的。\n汇合正好与分叉相反，表示两个或多个控制流被一个控制流代替。 3、泳道 泳道（swimlane）是活动图中的区域划分，根据每个活动的职责对所有活动进行划分，每个泳道代表一个责任区。 泳道和类并不是一一对应的关系，泳道关心的是其所代表的职责((，一个泳道可能由一个类实现，也可能由多个类实现**。 不带泳道的活动图，在需求分析中建模，用于刻画一个用例的用例描述。 带泳道的活动图，在系统分析及设计中建模，用于刻画一个用例的用例描述中的步骤如何落实到对象。 4、对象流 对象可以作为活动的输入或输出。例如，一个活动创建对象（作为活动的输出），或者，使用对象（作为活动的输入）。\n活动可以修改对象状态。\n活动图中画出对象流，就是强调这个对象在这个活动中的重要性。 5、信号 与状态图中的“信号”概念相同。\n信号是表示两个对象之间异步通信的方式。\n"
+},
+{
+	"uri": "https://surcs.github.io/markdown/code/",
+	"title": "Code",
+	"tags": [],
+	"description": "",
+	"content": " Inline Code markdown\nFor example, `this is the code` in the sentence ( using `` ` ``).  html\n\u0026lt;p\u0026gt;For example, \u0026lt;code\u0026gt;this is the code\u0026lt;/code\u0026gt;\u0026lt;/p\u0026gt;  renders to: For example, this is the code1 in the sentence ( using ` ).\nFor example, this is the code2\nIndented Code markdown\nline 1 of code (indent several lines of code by at least four spaces)  html\n\u0026lt;pre\u0026gt;\u0026lt;code\u0026gt;line 1 of code line 2 of code\u0026lt;/code\u0026gt;\u0026lt;/pre\u0026gt;  renders to: line 1 of code (indent several lines of code by at least four spaces)  line 1 of code line 2 of code Code Fence markdown\n``` public class HelloWorld1 { public static void main(String[] args) { System.out.println(\"Hello, World\"); } } ``` ```java public class HelloWorld2 { public static void main(String[] args) { System.out.println(\"Hello, World\"); } } ``` renders to: public class HelloWorld1 { public static void main(String[] args) { System.out.println(\u0026quot;Hello, World\u0026quot;); } }  PS: (Syntax highlighting) simply add the file extension of the language you want to use directly after ```\nbut here it seem not working !???\npublic class HelloWorld2 { public static void main(String[] args) { System.out.println(\u0026quot;Hello, World\u0026quot;); } }  "
+},
+{
+	"uri": "https://surcs.github.io/markdown/table/",
+	"title": "Table",
+	"tags": [],
+	"description": "",
+	"content": " markdown | option | description | | ------- | ----------- | | a | 1 | | b | 2 |  html \u0026lt;table\u0026gt; \u0026lt;tr\u0026gt; \u0026lt;th\u0026gt;a\u0026lt;/th\u0026gt; \u0026lt;th\u0026gt;b\u0026lt;/th\u0026gt; \u0026lt;/tr\u0026gt; \u0026lt;tr\u0026gt; \u0026lt;td\u0026gt;1\u0026lt;/td\u0026gt; \u0026lt;td\u0026gt;2\u0026lt;/td\u0026gt; \u0026lt;/tr\u0026gt; \u0026lt;/table\u0026gt;  renders to:\n   opt des     a 1   b 2    \n  a b   1 2   "
+},
+{
+	"uri": "https://surcs.github.io/markdown/link/",
+	"title": "Link",
+	"tags": [],
+	"description": "",
+	"content": " Basic Link  [my github](https://github.com/surcs)  my github\nAdd a title [surc](https://github.com/surcs \u0026quot;emmmmm\u0026quot;)  surc\nSet a anchor [a anchor](#test)  and\n### Basic Link \u0026lt;a id=\u0026quot;test\u0026quot;\u0026gt;\u0026lt;/a\u0026gt;  a anchor\n"
+},
+{
+	"uri": "https://surcs.github.io/markdown/image/",
+	"title": "Image",
+	"tags": [],
+	"description": "",
+	"content": " Basic ![nyantocat](https://octodex.github.com/images/nyantocat.gif \u0026quot;hhhhhhhhhhhhhhhhhhhhh\u0026quot;)  Alternative Usage ![spidertocat][id~] [id~]: https://octodex.github.com/images/spidertocat.png \u0026quot;spidertocat\u0026quot;  Resize ![saketocat](https://octodex.github.com/images/saketocat.png?width=30pc\u0026amp;height=30pc)  Add CSS Classes ![saketocat](https://octodex.github.com/images/saketocat.png?width=30pc\u0026amp;height=30pc\u0026amp;classes=shadow,border)  "
+},
+{
+	"uri": "https://surcs.github.io/markdown/tag/",
+	"title": "Tag",
+	"tags": ["hugo", "markdown"],
+	"description": "",
+	"content": " Markdown --- title: \u0026quot;Tag\u0026quot; date: 2019-10-09T14:51:10+08:00 weight : 12 tags : [\u0026quot;hugo\u0026quot;,\u0026quot;markdown\u0026quot;] ---  "
+},
+{
+	"uri": "https://surcs.github.io/markdown/notice/",
+	"title": "Notice",
+	"tags": ["hugo"],
+	"description": "",
+	"content": " Note {{% notice note %}} a notice {{% /notice %}}  a notice\n\rInfo {{% notice info %}} a info {{% /notice %}}  a info\n\rTip {{% notice tip %}} a tip {{% /notice %}}  a tip\n\rWarning {{% notice warning %}} a warning {{% /notice %}}  a warning\n\r"
+},
+{
+	"uri": "https://surcs.github.io/markdown/expand/",
+	"title": "Expand",
+	"tags": [],
+	"description": "",
+	"content": "{{% expand \u0026quot;A expand ?\u0026quot; %}} Yes! (￣▽￣)ノ {{% /expand %}}  \r\rA expand ?\r\r\rYes! (￣▽￣)ノ\r\r "
+},
+{
+	"uri": "https://surcs.github.io/markdown/button/",
+	"title": "Button",
+	"tags": [],
+	"description": "",
+	"content": "{{% button href=\u0026quot;https://github.com/surcs\u0026quot; icon=\u0026quot;fab fa-github\u0026quot; %}}my github{{%/* /button %}} {{% button href=\u0026quot;https://github.com/surcs\u0026quot; icon=\u0026quot;fab fa-github\u0026quot; icon-position=\u0026quot;right\u0026quot; %}}my github{{% /button %}}  \r\rmy github\r\rmy github\r\r\r"
+},
+{
+	"uri": "https://surcs.github.io/git/issue/",
+	"title": "Issue",
+	"tags": [],
+	"description": "",
+	"content": " 1、ssh key https://blog.jaycetyle.com/2018/02/github-ssh/ \n2、fatal: not a git repository (or any of the parent directories): .git git init   "
+},
+{
+	"uri": "https://surcs.github.io/spring/collection/other/",
+	"title": "Other",
+	"tags": [],
+	"description": "",
+	"content": " 1、IDEA 1、IDEA 内置 mysql 数据库 使用方法 https://www.twblogs.net/a/5c36cf29bd9eee35b21d4491 \n2、IDEA中不能创建xml文件(或其他类型) https://blog.csdn.net/nba_linshuhao/article/details/82735770 \n3、IDEA连接mysql后不显示表 https://blog.csdn.net/u012834773/article/details/89893678 \n4、IDEA 用了lombok依赖 不显示注解添加的方法 lombok 加依赖后 还需要在ideal中加插件 \n2、Spring 1、类名 不能 和注解等重名  2、bean 啥时候要实现Serializable接口 https://blog.csdn.net/hhx0626/article/details/61919232 \n3、Mybatis 1、mybatis 别名(标签 / 注解) https://blog.csdn.net/majinggogogo/article/details/71503263 \n2、mybatis 文档 https://mybatis.org/mybatis-3/zh/index.html \n3、mybatis 多表查询 双向关联时，toString()方法只让某一方可以输出另一方即可，否则会导致递归调用，程序出错。\nproperty:类属性名 column:对应列名 ofType:泛型类 javaType:类 自关联查询、多表连接查询、多表单独查询、子孙查询\nhttps://www.jianshu.com/p/ae60478c3dc0 (详细清晰 层次分明) associattion(对应一个对象)、collection(多个对象)、ResultType 自动映射、ResultMap 手动映射\nhttps://zhuanlan.zhihu.com/p/59972837 (方便复现 但较混乱) \n4、mybatis 注解 https://www.jianshu.com/p/828d2bd12b2f \n4、Other 1、log4j \u0026amp; slf4j 使用 https://www.cnblogs.com/ywlaker/p/6124067.html\nhttps://michael728.github.io/2019/08/10/java-spring-boot-log4j2/ \n2、lombok@Data和@Builder一起用无法添加无参构造方法 https://blog.csdn.net/w605283073/article/details/89221853 \n3、lombok 注解 https://www.jianshu.com/p/8a664c248472 \n"
+},
+{
+	"uri": "https://surcs.github.io/spring/collection/",
+	"title": "Collection",
+	"tags": [],
+	"description": "",
+	"content": " Collection collect some issues\n"
+},
+{
+	"uri": "https://surcs.github.io/tags/hugo/",
+	"title": "hugo",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://surcs.github.io/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://surcs.github.io/tags/markdown/",
+	"title": "markdown",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://surcs.github.io/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

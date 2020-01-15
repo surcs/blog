@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>En on SURC</title>
+    <link>https://surcs.github.io/en/</link>
+    <description>Recent content in En on SURC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 13 Oct 2019 22:56:39 +0800</lastBuildDate>
+    
+	<atom:link href="https://surcs.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Template</title>
+      <link>https://surcs.github.io/en/template/</link>
+      <pubDate>Sun, 13 Oct 2019 23:17:18 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/en/template/</guid>
+      <description>five expands for sentences Ⅰ
+{{% expand &amp;quot;&amp;quot; %}} {{% /expand %}} &amp;lt;br&amp;gt; {{% expand &amp;quot;&amp;quot; %}} {{% /expand %}} &amp;lt;br&amp;gt; {{% expand &amp;quot;&amp;quot; %}} {{% /expand %}} &amp;lt;br&amp;gt; {{% expand &amp;quot;&amp;quot; %}} {{% /expand %}} &amp;lt;br&amp;gt; {{% expand &amp;quot;&amp;quot; %}} {{% /expand %}} &amp;lt;br&amp;gt;  five expands for sentences Ⅱ
+{{% expand &amp;quot;&amp;quot; %}} {{% /expand %}} &amp;lt;br&amp;gt; {{% expand &amp;quot;&amp;quot; %}} {{% /expand %}} &amp;lt;br&amp;gt; {{% expand &amp;quot;&amp;quot; %}} {{% /expand %}} &amp;lt;br&amp;gt; {{% expand &amp;quot;&amp;quot; %}} {{% /expand %}} &amp;lt;br&amp;gt; {{% expand &amp;quot;&amp;quot; %}} {{% /expand %}} &amp;lt;br&amp;gt;   ten expands for words Ⅰ</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Module on </title>
+    <link>https://surcs.github.io/uml/module/</link>
+    <description>Recent content in Module on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 12 Nov 2019 23:40:58 +0800</lastBuildDate>
+    
+	<atom:link href="https://surcs.github.io/uml/module/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

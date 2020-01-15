@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo on </title>
+    <link>https://surcs.github.io/hugo/</link>
+    <description>Recent content in Hugo on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 09 Oct 2019 15:47:27 +0800</lastBuildDate>
+    
+	<atom:link href="https://surcs.github.io/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Push</title>
+      <link>https://surcs.github.io/hugo/push/</link>
+      <pubDate>Wed, 09 Oct 2019 15:52:07 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/hugo/push/</guid>
+      <description>hugo --theme=surc --baseUrl=&amp;quot;https://surcs.github.io/&amp;quot; --buildDrafts cd public git add .  git commit -m &amp;quot;add hugo syntax&amp;quot;  git push  cd ..  </description>
+    </item>
+    
+    <item>
+      <title>Run</title>
+      <link>https://surcs.github.io/hugo/run/</link>
+      <pubDate>Wed, 09 Oct 2019 15:56:43 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/hugo/run/</guid>
+      <description>run locally
+hugo server --theme=surc --buildDrafts  It will be run here local server</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on </title>
+    <link>https://surcs.github.io/markdown/</link>
+    <description>Recent content in Markdown on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 08 Oct 2019 00:14:39 +0800</lastBuildDate>
+    
+	<atom:link href="https://surcs.github.io/markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Heading</title>
+      <link>https://surcs.github.io/markdown/heading/</link>
+      <pubDate>Tue, 08 Oct 2019 16:08:56 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/markdown/heading/</guid>
+      <description> markdown # h1 Heading ## h2 Heading ### h3 Heading #### h4 Heading ##### h5 Heading ###### h6 Heading  Or html &amp;lt;h1&amp;gt;h1 Heading&amp;lt;/h1&amp;gt; &amp;lt;h2&amp;gt;h2 Heading&amp;lt;/h2&amp;gt; &amp;lt;h3&amp;gt;h3 Heading&amp;lt;/h3&amp;gt; &amp;lt;h4&amp;gt;h4 Heading&amp;lt;/h4&amp;gt; &amp;lt;h5&amp;gt;h5 Heading&amp;lt;/h5&amp;gt; &amp;lt;h6&amp;gt;h6 Heading&amp;lt;/h6&amp;gt;  Renders to: h1 Heading h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading </description>
+    </item>
+    
+    <item>
+      <title>Comment</title>
+      <link>https://surcs.github.io/markdown/comment/</link>
+      <pubDate>Tue, 08 Oct 2019 16:18:00 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/markdown/comment/</guid>
+      <description> &amp;lt;!-- This is a comment --&amp;gt;  Comment below should NOT be seen
+Renders to: </description>
+    </item>
+    
+    <item>
+      <title>Horizontal Rule</title>
+      <link>https://surcs.github.io/markdown/horizontal/</link>
+      <pubDate>Tue, 08 Oct 2019 16:25:34 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/markdown/horizontal/</guid>
+      <description> markdown ___: three consecutive underscores ---: three consecutive dashes ***: three consecutive asterisks  or html &amp;lt;hr&amp;gt;  
+renders to:  </description>
+    </item>
+    
+    <item>
+      <title>Body Copy</title>
+      <link>https://surcs.github.io/markdown/body/</link>
+      <pubDate>Tue, 08 Oct 2019 16:34:26 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/markdown/body/</guid>
+      <description> markdown I&#39;m the body copy (๑´ㅂ`๑)  or html &amp;lt;p&amp;gt; I&#39;m the body copy (๑´ㅂ`๑) ~ &amp;lt;/p&amp;gt;  renders to: I&amp;rsquo;m the body copy (๑´ㅂ`๑)
+ I&#39;m the body copy (๑´ㅂ`๑)~ </description>
+    </item>
+    
+    <item>
+      <title>Emphasis</title>
+      <link>https://surcs.github.io/markdown/emphasis/</link>
+      <pubDate>Tue, 08 Oct 2019 16:42:26 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/markdown/emphasis/</guid>
+      <description>Bold Markdown:
+**bold text(´･ω･`)**  HTML:
+&amp;lt;strong&amp;gt;bold text2 (´･ω･`)&amp;lt;/strong&amp;gt;  renders to:
+bold text1 (´･ω･`)
+bold text2 (´･ω･`)
+Italics Markdown
+_italicized text1_  html
+&amp;lt;em&amp;gt;italicized text2&amp;lt;/em&amp;gt;  renders to: italicized text1
+italicized text2
+strikethrough Markdown
+~~the strikethrogh1~~  html
+&amp;lt;del&amp;gt;the strikethrogh2&amp;lt;/del&amp;gt;  renders to:
+the strikethrogh1
+the strikethrogh2</description>
+    </item>
+    
+    <item>
+      <title>Blockquote</title>
+      <link>https://surcs.github.io/markdown/blockquote/</link>
+      <pubDate>Tue, 08 Oct 2019 18:05:58 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/markdown/blockquote/</guid>
+      <description> markdown &amp;gt; Here is **Blockquote 1**  html &amp;lt;blockquote&amp;gt; Here is &amp;lt;em&amp;gt; Blockquote 2 &amp;lt;/em&amp;gt; &amp;lt;/blockquote&amp;gt;  renders to:  Here is Blockquote 1
+  Here is  Blockquote 2   Nested &amp;gt; 1(two tabs)	&amp;gt; 2 &amp;gt; &amp;gt;&amp;gt; 3 &amp;gt; &amp;gt; 4(no tab) &amp;gt; 5   1
+2
+ 3
+ 4 5
+ </description>
+    </item>
+    
+    <item>
+      <title>List</title>
+      <link>https://surcs.github.io/markdown/list/</link>
+      <pubDate>Tue, 08 Oct 2019 18:24:24 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/markdown/list/</guid>
+      <description>Unordered markdown
++ 1 - 2 (&#39;+&#39; or &#39;-&#39; doesn&#39;t matter) + 3 + 4  html
+&amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;1&amp;lt;/li&amp;gt; &amp;lt;ul&amp;gt; &amp;lt;li&amp;gt;2&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;3&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt; &amp;lt;li&amp;gt;4&amp;lt;/li&amp;gt; &amp;lt;/ul&amp;gt;  renders to:
+ 1  2 (&amp;lsquo;+&amp;rsquo; or &amp;lsquo;-&amp;rsquo; doesn&amp;rsquo;t matter) 3  4   1  2 3  4  Ordered markdown
+1. a 2. b 3. c 4. d  html
+&amp;lt;ol&amp;gt; &amp;lt;li&amp;gt;!&amp;lt;/li&amp;gt; &amp;lt;li&amp;gt;?&amp;lt;/li&amp;gt; &amp;lt;/ol&amp;gt;  renders to:  a b c d   !</description>
+    </item>
+    
+    <item>
+      <title>Code</title>
+      <link>https://surcs.github.io/markdown/code/</link>
+      <pubDate>Tue, 08 Oct 2019 19:12:17 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/markdown/code/</guid>
+      <description>Inline Code markdown
+For example, `this is the code` in the sentence ( using `` ` ``).  html
+&amp;lt;p&amp;gt;For example, &amp;lt;code&amp;gt;this is the code&amp;lt;/code&amp;gt;&amp;lt;/p&amp;gt;  renders to: For example, this is the code1 in the sentence ( using ` ).
+For example, this is the code2
+Indented Code markdown
+line 1 of code (indent several lines of code by at least four spaces)  html
+&amp;lt;pre&amp;gt;&amp;lt;code&amp;gt;line 1 of code line 2 of code&amp;lt;/code&amp;gt;&amp;lt;/pre&amp;gt;  renders to: line 1 of code (indent several lines of code by at least four spaces)  line 1 of code line 2 of code Code Fence markdown</description>
+    </item>
+    
+    <item>
+      <title>Table</title>
+      <link>https://surcs.github.io/markdown/table/</link>
+      <pubDate>Wed, 09 Oct 2019 09:47:35 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/markdown/table/</guid>
+      <description> markdown | option | description | | ------- | ----------- | | a | 1 | | b | 2 |  html &amp;lt;table&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;th&amp;gt;a&amp;lt;/th&amp;gt; &amp;lt;th&amp;gt;b&amp;lt;/th&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;tr&amp;gt; &amp;lt;td&amp;gt;1&amp;lt;/td&amp;gt; &amp;lt;td&amp;gt;2&amp;lt;/td&amp;gt; &amp;lt;/tr&amp;gt; &amp;lt;/table&amp;gt;  renders to:
+   opt des     a 1   b 2    
+  a b   1 2   </description>
+    </item>
+    
+    <item>
+      <title>Link</title>
+      <link>https://surcs.github.io/markdown/link/</link>
+      <pubDate>Wed, 09 Oct 2019 12:56:43 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/markdown/link/</guid>
+      <description>Basic Link  [my github](https://github.com/surcs)  my github
+Add a title [surc](https://github.com/surcs &amp;quot;emmmmm&amp;quot;)  surc
+Set a anchor [a anchor](#test)  and
+### Basic Link &amp;lt;a id=&amp;quot;test&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;  a anchor</description>
+    </item>
+    
+    <item>
+      <title>Image</title>
+      <link>https://surcs.github.io/markdown/image/</link>
+      <pubDate>Wed, 09 Oct 2019 13:11:15 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/markdown/image/</guid>
+      <description> Basic ![nyantocat](https://octodex.github.com/images/nyantocat.gif &amp;quot;hhhhhhhhhhhhhhhhhhhhh&amp;quot;)  Alternative Usage ![spidertocat][id~] [id~]: https://octodex.github.com/images/spidertocat.png &amp;quot;spidertocat&amp;quot;  Resize ![saketocat](https://octodex.github.com/images/saketocat.png?width=30pc&amp;amp;height=30pc)  Add CSS Classes ![saketocat](https://octodex.github.com/images/saketocat.png?width=30pc&amp;amp;height=30pc&amp;amp;classes=shadow,border)  </description>
+    </item>
+    
+    <item>
+      <title>Tag</title>
+      <link>https://surcs.github.io/markdown/tag/</link>
+      <pubDate>Wed, 09 Oct 2019 14:51:10 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/markdown/tag/</guid>
+      <description> Markdown --- title: &amp;quot;Tag&amp;quot; date: 2019-10-09T14:51:10+08:00 weight : 12 tags : [&amp;quot;hugo&amp;quot;,&amp;quot;markdown&amp;quot;] ---  </description>
+    </item>
+    
+    <item>
+      <title>Notice</title>
+      <link>https://surcs.github.io/markdown/notice/</link>
+      <pubDate>Wed, 09 Oct 2019 14:59:38 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/markdown/notice/</guid>
+      <description> Note {{% notice note %}} a notice {{% /notice %}}  a notice
+Info {{% notice info %}} a info {{% /notice %}}  a info
+Tip {{% notice tip %}} a tip {{% /notice %}}  a tip
+Warning {{% notice warning %}} a warning {{% /notice %}}  a warning
+</description>
+    </item>
+    
+    <item>
+      <title>Expand</title>
+      <link>https://surcs.github.io/markdown/expand/</link>
+      <pubDate>Wed, 09 Oct 2019 15:18:06 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/markdown/expand/</guid>
+      <description>{{% expand &amp;quot;A expand ?&amp;quot; %}} Yes! (￣▽￣)ノ {{% /expand %}}  A expand ?Yes! (￣▽￣)ノ </description>
+    </item>
+    
+    <item>
+      <title>Button</title>
+      <link>https://surcs.github.io/markdown/button/</link>
+      <pubDate>Wed, 09 Oct 2019 14:58:11 +0800</pubDate>
+      
+      <guid>https://surcs.github.io/markdown/button/</guid>
+      <description>{{% button href=&amp;quot;https://github.com/surcs&amp;quot; icon=&amp;quot;fab fa-github&amp;quot; %}}my github{{%/* /button %}} {{% button href=&amp;quot;https://github.com/surcs&amp;quot; icon=&amp;quot;fab fa-github&amp;quot; icon-position=&amp;quot;right&amp;quot; %}}my github{{% /button %}}  my githubmy github</description>
+    </item>
+    
+  </channel>
+</rss>
